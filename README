@@ -1,0 +1,10 @@
+this is a template rails project
+
+
+= Installation
+
+  update config/database.yml
+  replace all occurrances of Reviews::Application by YourProject::Application
+  update .rvmrc file
+  rake db:create
+  rake db:migrate

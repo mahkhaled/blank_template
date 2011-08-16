@@ -1,0 +1,30 @@
+ar:
+  standard:
+    cmds:
+      show: "عرض"
+      edit: "تعديل"
+      delete: "حذف"
+      new: "%{model} جديد"
+      back: "رجوع"
+    flash:
+      create: "تم انشاؤه بنجاح"
+      update: "تم تعديله بنجاح"
+      destroy: "تم حذفه بنجاح"
+    labels:
+      are_you_sure: "هل أنت متأكد؟"
+    advanced_search: ">> بحث متقدم"
+      
+  login:
+    email: "البريد الإلكتروني"
+    password: "كلمة السر"
+    submit: "تسجيل الدخول"
+    sign_out: "تسجيل الخروج"
+    sign_in: "تسجيل الدخول"
+    forget_password: "فقدت كلمة المرور؟"
+    reset_password: "ارسل لي تعليمات تغير كلمات المرور"
+
+  welcome: "مرحباً  %{name}"
+  
+  will_paginate:
+    previous: "السابق"
+    next: "التالي"

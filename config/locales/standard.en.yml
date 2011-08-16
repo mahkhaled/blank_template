@@ -1,0 +1,14 @@
+en:
+  standard:
+    cmds:
+      show: "Show"
+      edit: "Edit"
+      delete: "Delete"
+      new: "New %{model}"
+      back: "Back"
+    flash:
+      create: "Successfully Created!"
+      update: "Successfully Updated!"
+      destroy: "Successfully Deleted!"
+    labels:
+      are_you_sure: "Are you sure?"
