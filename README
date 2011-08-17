@@ -1,5 +1,18 @@
 this is a template rails project
 
+= HOW TO USE
+
+  create your own git repo
+  git remote add blank_template git@github.com:mahkhaled/blank_template.git
+
+= TO PULL
+
+  git checkout myworkingbranch
+  git pull blank_template master
+
+= TO PUSH
+
+  git push blank_template from_branch:master
 
 = Installation
 
