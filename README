@@ -1,6 +1,6 @@
 this is a template rails project
 
-= HOW TO USE
+= Installation
 
   create your own git repo
   git clone yourprojectrepo.git
@@ -8,19 +8,23 @@ this is a template rails project
   git branch template
   git pull blank_template master:template
 
+
 = TO PULL
 
   git checkout template
   git pull blank_template master:template
 
-= TO PUSH
 
+= TO PUSH
+  
+  git checkout template
   git push blank_template template:master
 
-= Installation
+
+= HOW TO CONFIGURE
 
   update config/database.yml
-  replace all occurrances of Reviews::Application by YourProject::Application
+  replace all occurrances of Reviews YourProject case sensitive
   update .rvmrc file
   rake db:create
   rake db:migrate
