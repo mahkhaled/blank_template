@@ -13,6 +13,7 @@ ar:
     labels:
       are_you_sure: "هل أنت متأكد؟"
     advanced_search: ">> بحث متقدم"
+    search: "بحث"
       
   login:
     email: "البريد الإلكتروني"

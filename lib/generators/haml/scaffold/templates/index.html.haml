@@ -6,14 +6,14 @@
     = hidden_field_tag :direction, params[:direction]
     = hidden_field_tag :sort, params[:sort]
 <% for attribute in attributes -%>
-<% if attribute.field_type == "string" || attribute.field_type == "text" -%>
+<% if attribute.type == :string || attribute.type == :text -%>
     .field
       = f.label :<%= attribute.name %>
       = f.text_field :<%= attribute.name %>_contains
 <% end -%>
 <% end -%>
     .action
-      = f.submit "Search"
+      = f.submit t("standard.search")
 
 .sortable.paginated#<%= plural_table_name %>
   = render "<%= plural_table_name %>"
