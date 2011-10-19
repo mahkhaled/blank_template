@@ -32,3 +32,4 @@ designer/
 webrat.log
 
 RAILS_ENV=test
+.sass-cache/

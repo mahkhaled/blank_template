@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.8'
+gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -41,8 +41,12 @@ gem "ckeditor", "~> 3.6.0"
 gem "client_side_validations"
 gem "hirb", "~> 0.4.5"
 
-gem "exception_logger", '0.1.10', :require => "exception_logger"
+gem 'exception_logger', '0.1.7', :git => 'git://github.com/jchunky/exception_logger.git'
 gem 'exception_notification'
+
+gem 'execjs'
+
+gem 'therubyracer'
 
 group :development, :test do
   gem "rspec-rails", ">= 2.0.0"
@@ -50,4 +54,12 @@ group :development, :test do
   gem "webrat", ">= 0.7.2"
   gem "database_cleaner", ">= 0.5.2"
   gem "selenium-client", ">= 1.2.18"
+end
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails', " ~> 3.1.0"
+  gem 'coffee-rails', " ~> 3.1.0"
+  gem 'uglifier'
 end
