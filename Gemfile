@@ -37,7 +37,7 @@ gem "devise"
 gem 'jquery-rails', '>= 1.0.3'
 gem "will_paginate", "~> 3.0.pre2"
 gem "meta_search"
-gem "ckeditor", :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
+gem "ckeditor", "~> 3.6.0"
 gem "client_side_validations"
 gem "hirb", "~> 0.4.5"
 
