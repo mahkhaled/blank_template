@@ -41,6 +41,9 @@ gem "ckeditor", "~> 3.6.0"
 gem "client_side_validations"
 gem "hirb", "~> 0.4.5"
 
+gem "exception_logger", '0.1.10', :require => "exception_logger"
+gem 'exception_notification'
+
 group :development, :test do
   gem "rspec-rails", ">= 2.0.0"
   gem "cucumber-rails", ">= 0.3.2"

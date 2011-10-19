@@ -7,6 +7,8 @@ this is a template rails project
 * index (ajax, pagination, sorting)
 * devise
 * testing environment
+* exception_logger
+* exception_notification
 
 = Installation
 

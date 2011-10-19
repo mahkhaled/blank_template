@@ -1,4 +1,4 @@
-Rails.pplication.configure do
+Reviews::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # The production environment is meant for finished, "live" apps.
@@ -47,3 +47,8 @@ Rails.pplication.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 end
+
+Reviews::Application.config.middleware.use ExceptionNotifier,
+  :email_prefix => "[Reviews Exception] ",
+  :sender_address => %{"notifier exception" <no-reply@reviews.com>},
+  :exception_recipients => %w{mahmoud.khaled@badrit.com}
