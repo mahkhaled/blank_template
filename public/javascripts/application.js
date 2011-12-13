@@ -1,5 +1,8 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
+function live_search(){
+  $.get($(".searchable").attr("action"), $(".searchable").serialize(), null, "script");
+}
 $(function() {
   
   $(".sortable th a, .paginated .pagination a").live("click", function() {
@@ -10,7 +13,15 @@ $(function() {
   });
   
   $(".searchable input").keyup(function() {
-    $.get($(".searchable").attr("action"), $(".searchable").serialize(), null, "script");
+    live_search();
+    return false;
+  });
+  $(".searchable select").change(function() {
+    live_search();
+    return false;
+  });
+  $(".searchable input[type=checkbox]").click(function() {
+    live_search();
     return false;
   });
   
@@ -27,6 +38,9 @@ $(function() {
     }
   });
 
+  // reload listing page
+  $('.searchable input, .searchable select').attr('autocomplete', 'off');
+  $('.popup_link').colorbox();
 });
 
 

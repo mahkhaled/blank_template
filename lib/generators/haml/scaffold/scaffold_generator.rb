@@ -45,11 +45,11 @@ module Haml
     protected
 
       def available_views
-        %w(index edit show new _#{table_name})
+        %w(index edit show new _#{table_name} _remote_form)
       end
 
       def available_views_javascripts
-        %w(index)
+        %w(index edit update new create)
       end
 
       def handler
