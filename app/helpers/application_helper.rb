@@ -23,6 +23,11 @@ module ApplicationHelper
     "<p class='filter'>#{t("standard.advanced_search")}</p>".html_safe
   end
   
+  def remote_flash(obj=nil)
+    if @flash_notice
+      "<div class='flash notice'>#{@flash_notice}</div>".html_safe
+    end
+  end
 end
 
 module WillPaginate::I18nViewHelpers
