@@ -32,7 +32,7 @@ gem 'mysql2', '~> 0.2.6'
 # end
 gem "haml"
 gem "haml-rails" 
-gem "sishen-rtranslate"
+gem "bing_translator"
 gem "devise"
 gem 'jquery-rails', '>= 1.0.3'
 gem "will_paginate", "~> 3.0.pre2"
