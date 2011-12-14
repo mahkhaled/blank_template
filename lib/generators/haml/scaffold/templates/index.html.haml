@@ -20,4 +20,4 @@
   
 %br
 
-= link_to t('.new'), new_<%= singular_table_name %>_path
+= link_to t('.new'), new_<%= singular_table_name %>_path(:format => :js), :class => 'popup_link'

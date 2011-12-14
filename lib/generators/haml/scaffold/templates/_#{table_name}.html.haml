@@ -12,9 +12,9 @@
 <% for attribute in attributes -%>
       %td= <%= singular_table_name %>.<%= attribute.name %>
 <% end -%>
-      %td= link_to t('standard.cmds.show'), <%= singular_table_name %>
-      %td= link_to t('standard.cmds.edit'), edit_<%= singular_table_name %>_path(<%= singular_table_name %>)
-      %td= link_to t('standard.cmds.delete'), <%= singular_table_name %>, :confirm => t('standard.labels.are_you_sure'), :method => :delete
+      %td= link_to t('standard.cmds.show'), <%= singular_table_name %>_path(<%= singular_table_name %>, :format => :js), :class => "popup_link"
+      %td= link_to t('standard.cmds.edit'), edit_<%= singular_table_name %>_path(<%= singular_table_name %>, :format => :js), :class => "popup_link"
+      %td= link_to t('standard.cmds.delete'), <%= singular_table_name %>, :confirm => t('standard.labels.are_you_sure'), :method => :delete, :remote => true
 
   %tfoot
     %tr

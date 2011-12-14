@@ -45,11 +45,11 @@ module Haml
     protected
 
       def available_views
-        %w(index edit show new _#{table_name})
+        %w(index edit show new _#{table_name} _remote_form)
       end
 
       def available_views_javascripts
-        %w(index)
+        %w(index edit update new create)
       end
 
       def handler
@@ -83,9 +83,12 @@ module Haml
           options[:definite] = true
         end
         
-        require "rtranslate"
         localized_name = word.gsub("_", " ")
-        localized_name = Translate.t(localized_name, "en", I18n.locale.to_s)
+        
+        require 'rubygems'
+        require 'bing_translator'
+        translator = BingTranslator.new 'A3129A3FF3AF2F41692E7D7BC4E18142435D18FA'
+        localized_name = translator.translate localized_name, :from => 'en', :to => I18n.locale.to_s
 
         the = I18n.translate("the")
         if options[:definite] && !localized_name.starts_with?(the)
