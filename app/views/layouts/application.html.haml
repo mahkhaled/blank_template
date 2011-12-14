@@ -6,8 +6,8 @@
     %META{:CONTENT => "text/html; charset=windows-1256", "HTTP-EQUIV" => "Content-Type"}
       %meta{:content => "", :name => "description"}
         %meta{:content => "Egypt", :name => "keywords"}
-          = stylesheet_link_tag 'form_styles', 'default', "application", "colorbox"
-          = javascript_include_tag :defaults, "jquery.url", "rails.validations", 'jquery-ui-1.8.16.custom.min', "colorbox/jquery.colorbox"
+          = stylesheet_link_tag 'form_styles', :defaults, "application", "colorbox"
+          = javascript_include_tag :application, "jquery.url", "rails.validations", 'jquery-ui-1.8.16.custom.min', "colorbox/jquery.colorbox"
           
           :javascript
             $(function() {
