@@ -7,7 +7,8 @@
       %meta{:content => "", :name => "description"}
         %meta{:content => "Egypt", :name => "keywords"}
           = stylesheet_link_tag 'form_styles', 'default', "application", "colorbox"
-          = javascript_include_tag :defaults, "jquery.url", "rails.validations", "colorbox/jquery.colorbox"
+          = javascript_include_tag :defaults, "jquery.url", "rails.validations", 'jquery-ui-1.8.16.custom.min', "colorbox/jquery.colorbox"
+          
           :javascript
             $(function() {
               $(".filter").click(function(){
