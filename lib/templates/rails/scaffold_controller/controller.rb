@@ -50,7 +50,7 @@ class <%= controller_class_name %>Controller < ApplicationController
       if @<%= orm_instance.save %>
         format.html { redirect_to(@<%= singular_table_name %>, :notice => t('<%= plural_table_name %>.create.flash')) }
         format.xml  { render :xml => @<%= singular_table_name %>, :status => :created, :location => @<%= singular_table_name %> }
-        format.js   { @flash_notice = t('<%= plural_table_name %>.update.flash') }
+        format.js   { @flash_notice = t('<%= plural_table_name %>.create.flash') }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @<%= orm_instance.errors %>, :status => :unprocessable_entity }
@@ -68,7 +68,7 @@ class <%= controller_class_name %>Controller < ApplicationController
       if @<%= orm_instance.update_attributes("params[:#{singular_table_name}]") %>
         format.html { redirect_to(@<%= singular_table_name %>, :notice => t('<%= plural_table_name %>.update.flash')) }
         format.xml  { head :ok }
-        format.js   { @flash_notice = t('<%= plural_table_name %>.create.flash') }
+        format.js   { @flash_notice = t('<%= plural_table_name %>.update.flash') }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @<%= orm_instance.errors %>, :status => :unprocessable_entity }
