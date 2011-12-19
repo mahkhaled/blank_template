@@ -40,7 +40,16 @@ $(function() {
 
   // reload listing page
   $('.searchable input, .searchable select').attr('autocomplete', 'off');
-  $('.popup_link').colorbox();
+  loadColorBox();
 });
 
+function loadColorBox(){
+  $('.popup_link').colorbox(
+    {onComplete : function() { 
+      $("#cboxLoadedContent form").resize(function(e){
+        $.colorbox.resize(); 
+      }); 
+      }
+    });
+}
 
