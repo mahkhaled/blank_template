@@ -1,7 +1,7 @@
 form label {  
-  float: right;  
+  float: left;  
   width: 100px;  
-  text-align: left;  
+  text-align: right;  
   padding: 2px 16px;  
 }  
 .field_with_errors input{
@@ -41,7 +41,7 @@ th .current {
 }
 
 th .asc {
-  background-image: url(/images/up_arrow.gif);
+  background-image: url(/assets/up_arrow.gif);
 }
 
 th .desc {
@@ -55,12 +55,15 @@ th .desc {
 .field_with_errors .message {  
   color: #D00;  
   padding-left: 5px;  
-  padding-right: 5px;  
+  padding-right: 130px;  
   display:inline;
   text-align:right;
   width: 200px;
 }  
 
+.actions, .action{
+  padding:20px 0;
+}
 
 label.wide, .field_with_errors label.wide{
   width: 400px;
@@ -68,4 +71,28 @@ label.wide, .field_with_errors label.wide{
 
 label.required{
   background: url(/images/star.png) 2px no-repeat;
+}
+
+div.panel
+{
+margin:0px;
+padding:5px;
+display:none;
+height:auto;
+}
+
+.panel input[type=text]{
+font-size: 150%;
+}
+
+p.filter
+{
+margin:0px;
+padding:5px;
+font-weight:bold;
+}
+p.filter a{
+background:url(../images/slid.png) right no-repeat;
+text-decoration:none;
+
 }

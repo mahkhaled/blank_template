@@ -6,6 +6,7 @@
   = @<%= singular_table_name %>.<%= attribute.name %>
 <% end -%>
 
-= link_to t('standard.cmds.edit'), edit_<%= singular_table_name %>_path(@<%= singular_table_name %>)
-\|
-= link_to t('standard.cmds.back'), <%= index_helper %>_path
+- if !defined?(remote) || !remote
+	= link_to t('standard.cmds.edit'), edit_<%= singular_table_name %>_path(@<%= singular_table_name %>)
+	\|
+	= link_to t('standard.cmds.back'), <%= index_helper %>_path

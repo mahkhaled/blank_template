@@ -46,10 +46,13 @@ $(function() {
 function loadColorBox(){
   $('.popup_link').colorbox(
     {onComplete : function() { 
+      // resize when some contents change size ex: validation
       $("#cboxLoadedContent form").resize(function(e){
         $.colorbox.resize(); 
       }); 
       }
     });
+  // resize when ajax response
+  $.colorbox.resize(); 
 }
 

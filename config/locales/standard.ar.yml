@@ -10,6 +10,7 @@ ar:
       create: "تم انشاؤه بنجاح"
       update: "تم تعديله بنجاح"
       destroy: "تم حذفه بنجاح"
+      update_failure: "لم يتم الحفظ"
     labels:
       are_you_sure: "هل أنت متأكد؟"
     advanced_search: ">> بحث متقدم"
@@ -17,15 +18,20 @@ ar:
       
   login:
     email: "البريد الإلكتروني"
-    password: "كلمة السر"
-    submit: "تسجيل الدخول"
+    password: "كلمة المرور"
+    password_confirmation: "تأكيد كلمة المرور"
+    submit: "أدخل"
     sign_out: "تسجيل الخروج"
-    sign_in: "تسجيل الدخول"
+    if_you_are_not_do: "مرحباً %{name}"
+    sign_out_action: "%{action}"
+    sign_in: "أدخل"
+    edit_profile: "تغيير كلمة السر"
+    change_password: "تغيير كلمة السر"
+    sign_up: "حساب جديد"
     forget_password: "فقدت كلمة المرور؟"
     reset_password: "ارسل لي تعليمات تغير كلمات المرور"
+    didnt_receive_confirmation_instructions: "لم تستلم تعليمات التفعيل؟"
 
-  welcome: "مرحباً  %{name}"
-  
   will_paginate:
     previous: "السابق"
     next: "التالي"
